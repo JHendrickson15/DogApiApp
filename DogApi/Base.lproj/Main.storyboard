@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sz-6j-gbX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ila-96-ErM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,27 +26,40 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-gQ-i2I">
                                 <rect key="frame" x="25" y="533" width="364" height="304"/>
-                                <state key="normal" image="RandomButton">
+                                <state key="normal" image="DogRandomButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="searchButtonTapped:" destination="7sz-6j-gbX" eventType="touchUpInside" id="ySq-Ag-Th0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-tP-YVR">
+                                <rect key="frame" x="342" y="846" width="52" height="30"/>
+                                <state key="normal" title="To Cats">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LYn-je-2u2" kind="show" id="1kj-w3-uCM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.02716919147" green="0.3024582489" blue="0.47173935169999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1Zv-pR-X1T" firstAttribute="bottom" secondItem="Xq0-gQ-i2I" secondAttribute="bottom" constant="25" id="62Q-gE-ipd"/>
                             <constraint firstItem="Xq0-gQ-i2I" firstAttribute="centerX" secondItem="1Zv-pR-X1T" secondAttribute="centerX" id="DLH-J2-tDm"/>
                             <constraint firstAttribute="trailing" secondItem="FUd-Jb-zoM" secondAttribute="trailing" constant="25" id="Xlh-fS-8ag"/>
                             <constraint firstItem="FUd-Jb-zoM" firstAttribute="top" secondItem="1Zv-pR-X1T" secondAttribute="top" constant="25" id="a1h-nX-S77"/>
+                            <constraint firstItem="1Zv-pR-X1T" firstAttribute="trailing" secondItem="oSi-tP-YVR" secondAttribute="trailing" constant="20" id="f9f-r5-hMM"/>
                             <constraint firstItem="1Zv-pR-X1T" firstAttribute="trailing" secondItem="Xq0-gQ-i2I" secondAttribute="trailing" constant="25" id="iHd-vP-MCF"/>
                             <constraint firstItem="FUd-Jb-zoM" firstAttribute="leading" secondItem="JXd-a9-kJw" secondAttribute="leading" constant="25" id="pOO-qh-83x"/>
                             <constraint firstItem="Xq0-gQ-i2I" firstAttribute="top" secondItem="FUd-Jb-zoM" secondAttribute="bottom" constant="100" id="rLl-9v-Be7"/>
+                            <constraint firstAttribute="bottom" secondItem="oSi-tP-YVR" secondAttribute="bottom" constant="20" id="um2-W9-BJl"/>
                             <constraint firstItem="Xq0-gQ-i2I" firstAttribute="leading" secondItem="1Zv-pR-X1T" secondAttribute="leading" constant="25" id="yji-8U-1Cp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Zv-pR-X1T"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6kx-Ha-D5j"/>
                     <connections>
                         <outlet property="pictureImageView" destination="FUd-Jb-zoM" id="xmc-hH-k0B"/>
                         <outlet property="searchButton" destination="Xq0-gQ-i2I" id="68q-b5-Tg2"/>
@@ -54,10 +67,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftl-QC-a58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.666666666666671" y="144.64285714285714"/>
+            <point key="canvasLocation" x="3707.2463768115945" y="144.64285714285714"/>
+        </scene>
+        <!--Cat View Controller-->
+        <scene sceneID="Dc6-UU-DYy">
+            <objects>
+                <viewController id="LYn-je-2u2" customClass="CatViewController" customModule="DogApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KMT-Vq-3e8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-B3-flp">
+                                <rect key="frame" x="25" y="69" width="364" height="364"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV1-Wh-FWA">
+                                <rect key="frame" x="25" y="533" width="364" height="304"/>
+                                <state key="normal" image="CatRandomButton">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="LYn-je-2u2" eventType="touchUpInside" id="AKK-UY-kdd"/>
+                                    <action selector="searchButtonTapped:" destination="7sz-6j-gbX" eventType="touchUpInside" id="akT-WD-b22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-NL-PEU">
+                                <rect key="frame" x="20" y="846" width="57" height="30"/>
+                                <state key="normal" title="To Dogs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toDogsButtonTapped:" destination="LYn-je-2u2" eventType="touchUpInside" id="KpD-GT-wfn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.17421289030000001" blue="0.075796340749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5lx-TD-HkE" firstAttribute="bottom" secondItem="vV1-Wh-FWA" secondAttribute="bottom" constant="25" id="7xV-Nl-fEx"/>
+                            <constraint firstItem="bQx-B3-flp" firstAttribute="top" secondItem="5lx-TD-HkE" secondAttribute="top" constant="25" id="8d9-Ay-Nl9"/>
+                            <constraint firstItem="5lx-TD-HkE" firstAttribute="trailing" secondItem="bQx-B3-flp" secondAttribute="trailing" constant="25" id="9rI-nQ-FiN"/>
+                            <constraint firstItem="5lx-TD-HkE" firstAttribute="trailing" secondItem="vV1-Wh-FWA" secondAttribute="trailing" constant="25" id="FWO-Au-7Yj"/>
+                            <constraint firstItem="vV1-Wh-FWA" firstAttribute="centerX" secondItem="5lx-TD-HkE" secondAttribute="centerX" id="YOh-iV-m5w"/>
+                            <constraint firstItem="vV1-Wh-FWA" firstAttribute="leading" secondItem="5lx-TD-HkE" secondAttribute="leading" constant="25" id="hJq-KQ-Y6n"/>
+                            <constraint firstItem="MdG-NL-PEU" firstAttribute="leading" secondItem="5lx-TD-HkE" secondAttribute="leading" constant="20" id="hdH-G0-0sj"/>
+                            <constraint firstItem="bQx-B3-flp" firstAttribute="leading" secondItem="5lx-TD-HkE" secondAttribute="leading" constant="25" id="tc9-MX-mZf"/>
+                            <constraint firstItem="bQx-B3-flp" firstAttribute="width" secondItem="bQx-B3-flp" secondAttribute="height" multiplier="1:1" id="vdt-lU-d8o"/>
+                            <constraint firstAttribute="bottom" secondItem="MdG-NL-PEU" secondAttribute="bottom" constant="20" id="wAQ-VH-jKm"/>
+                            <constraint firstItem="vV1-Wh-FWA" firstAttribute="top" secondItem="bQx-B3-flp" secondAttribute="bottom" constant="100" id="xmz-0V-SIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5lx-TD-HkE"/>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="bQx-B3-flp" id="M5D-cM-YNE"/>
+                        <outlet property="searchButton" destination="vV1-Wh-FWA" id="WSq-og-Qpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXR-EC-Rgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4562.3188405797109" y="144.64285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SKb-kr-pKb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ila-96-ErM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rnw-Nn-WPV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.02716919147" green="0.3024582489" blue="0.47173935169999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.02716919147" green="0.3024582489" blue="0.47173935169999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7sz-6j-gbX" kind="relationship" relationship="rootViewController" id="HZj-pL-DcE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcG-Is-1mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797.1014492753625" y="144.64285714285714"/>
         </scene>
     </scenes>
     <resources>
-        <image name="RandomButton" width="350" height="350"/>
+        <image name="CatRandomButton" width="350" height="350"/>
+        <image name="DogRandomButton" width="350" height="350"/>
     </resources>
 </document>

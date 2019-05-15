@@ -12,7 +12,6 @@ class DogViewController: UIViewController {
     
     
     @IBOutlet weak var pictureImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     
 

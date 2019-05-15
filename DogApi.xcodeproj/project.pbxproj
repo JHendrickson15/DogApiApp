@@ -14,6 +14,9 @@
 		16E93E4E228C588C00F2DFAF /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E4D228C588C00F2DFAF /* Dog.swift */; };
 		16E93E51228C591B00F2DFAF /* DogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E50228C591B00F2DFAF /* DogController.swift */; };
 		16E93E53228C5E8A00F2DFAF /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E52228C5E8A00F2DFAF /* DogViewController.swift */; };
+		16E93E57228C912500F2DFAF /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E56228C912500F2DFAF /* Cat.swift */; };
+		16E93E59228C92A200F2DFAF /* CatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E58228C92A200F2DFAF /* CatController.swift */; };
+		16E93E5B228C948100F2DFAF /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E93E5A228C948100F2DFAF /* CatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		16E93E4D228C588C00F2DFAF /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		16E93E50228C591B00F2DFAF /* DogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogController.swift; sourceTree = "<group>"; };
 		16E93E52228C5E8A00F2DFAF /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		16E93E56228C912500F2DFAF /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		16E93E58228C92A200F2DFAF /* CatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatController.swift; sourceTree = "<group>"; };
+		16E93E5A228C948100F2DFAF /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				16E93E4D228C588C00F2DFAF /* Dog.swift */,
+				16E93E56228C912500F2DFAF /* Cat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				16E93E50228C591B00F2DFAF /* DogController.swift */,
+				16E93E58228C92A200F2DFAF /* CatController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				16E93E52228C5E8A00F2DFAF /* DogViewController.swift */,
+				16E93E5A228C948100F2DFAF /* CatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E93E5B228C948100F2DFAF /* CatViewController.swift in Sources */,
 				16E93E4E228C588C00F2DFAF /* Dog.swift in Sources */,
 				16E93E51228C591B00F2DFAF /* DogController.swift in Sources */,
+				16E93E57228C912500F2DFAF /* Cat.swift in Sources */,
 				16E93E38228C586800F2DFAF /* AppDelegate.swift in Sources */,
+				16E93E59228C92A200F2DFAF /* CatController.swift in Sources */,
 				16E93E53228C5E8A00F2DFAF /* DogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

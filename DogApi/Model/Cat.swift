@@ -1,5 +1,5 @@
 //
-//  Dog.swift
+//  Cat.swift
 //  DogApi
 //
 //  Created by Jordan Hendrickson on 5/15/19.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Dog: Decodable {
+struct Cat: Decodable {
     let image: URL
     private enum CodingKeys: String, CodingKey {
-        case image = "message"
+        case image = "url"
     }
 }
